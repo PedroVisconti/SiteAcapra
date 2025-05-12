@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\Configurations\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
 </Project>
