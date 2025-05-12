@@ -19,6 +19,10 @@ namespace SiteAcapra
                 app.UseHsts();
             }
 
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
