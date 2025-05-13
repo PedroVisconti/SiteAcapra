@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="~/SiteAcapra.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div>
-        <main>
+
+    @await Html.PartialAsync("~/Views/Shared/_NavBar.cshtml")
+
+    <div class="wrapper d-flex flex-column" style="min-height: 87.1vh;">
+        <main">
             @RenderBody()
         </main>
     </div>
+
+    @await Html.PartialAsync("~/Views/Shared/_Footer.cshtml")
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
