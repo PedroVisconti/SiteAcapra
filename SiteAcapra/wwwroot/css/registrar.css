@@ -6,8 +6,8 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     height: 80vh;
 }
 
@@ -16,7 +16,7 @@
     padding: 30px;
     border-radius: 8px;
     text-align: center;
-    width: 400px;
+    width: 600px;
 }
 
     .form-box h2 {
