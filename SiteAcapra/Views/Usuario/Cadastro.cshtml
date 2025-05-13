@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Cadastro - Sistema Adoção Acapra";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -13,8 +14,8 @@
 
     <main class="container">
         <section class="form-box">
-            <img src="~/images/logo.png" alt="Logo Acapra" class="form-logo">
-            <h2>CADASTRO</h2>
+            <img src="~/imagens/logo_roxa_acapra.png" alt="Logo Acapra" class="form-logo">
+            <h2>Cadastro</h2>
 
             <form id="formCadastro" method="post" action="/Cadastro/Registrar">
                 <input type="text" name="nome" placeholder="Nome Completo" required>
@@ -39,7 +40,6 @@
             </form>
         </section>
     </main>
-
 
 </body>
 </html>
