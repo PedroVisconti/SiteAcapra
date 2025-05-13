@@ -1,9 +1,35 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Login";
 }
 
-<div>
-    <h1>Teste</h1>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema Adoção Acapra</title>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+
+
+    <div class="form-box">
+        <img src="logo.png" alt="Logo Acapra" class="form-logo">
+
+        <h2>SISTEMA ADOÇÃO ACAPRA</h2>
+
+        <form id="formLogin">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+
+        <a asp-controller="Usuario" asp-action="Cadastro" class="link-registrar">Registrar-se</a>
+    </div>
+
+
+</body>
+</html>

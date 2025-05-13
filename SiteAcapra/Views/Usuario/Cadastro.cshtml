@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Cadastro - Sistema Adoção Acapra";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/registrar.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="form-box">
+            <img src="~/images/logo.png" alt="Logo Acapra" class="form-logo">
+            <h2>CADASTRO</h2>
+
+            <form id="formCadastro" method="post" action="/Cadastro/Registrar">
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="endereco" placeholder="Endereço" required>
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+
+                <div class="row">
+                    <input type="date" name="dataNascimento" required>
+                    <select name="sexo" required>
+                        <option value="">Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="password" name="confirmarSenha" placeholder="Confirme sua Senha" required>
+
+                <button type="submit">REGISTRAR-SE</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>

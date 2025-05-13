@@ -1,0 +1,12 @@
+﻿.navbar {
+    background-color: #645e9d;
+    height: 70px;
+    color: white;
+}
+.navbar-logo {
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transform: scale(0.9); 
+        transform-origin: right center; 
+    }
