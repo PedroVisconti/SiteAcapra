@@ -8,6 +8,10 @@ namespace SiteAcapra.Controllers
         {
             return View();
         }
+        public IActionResult DetalhesAnimais()
+        {
+            return View();
+        }
     }
 }
 

@@ -12,6 +12,7 @@
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Migrations\" />
     <Folder Include="Utilities\" />
+    <Folder Include="Views\Detalhes\" />
   </ItemGroup>
 
 </Project>

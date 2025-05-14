@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SiteAcapra.Views.Formulario
+namespace SiteAcapra.Views.DetalhesAnimais
 {
-    public class FormularioModel : PageModel
+    public class DetalhesAnimaisModel : PageModel
     {
         public void OnGet()
         {

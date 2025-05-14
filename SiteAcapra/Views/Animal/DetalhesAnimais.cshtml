@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Detalhes Animal - Sistema Adoção Acapra";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .card-animal {
+            background-color: white;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+
+        .titulo-animal {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .info-animal {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .galeria {
+            background-color: #70588c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+            .galeria h5 {
+                background-color: #5a4b82;
+                color: white;
+                display: inline-block;
+                padding: 5px 15px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .galeria img {
+                width: 100px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin: 5px;
+            }
+
+        .descricao {
+            background-color: #70588c;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .descricao-titulo {
+            background-color: #5a4b82;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .btn-adotar {
+            margin-top: 20px;
+            background-color: #5a4b82;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+            .btn-adotar:hover {
+                background-color: #483a68;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="card-animal">
+        <div class="titulo-animal">Luma</div>
+        <div class="info-animal">Luma, 3 anos - Castrada e Vacinada, Porte G.</div>
+
+        <div class="galeria text-center">
+            <h5>Galeria</h5><br />
+            <img src="~/images/luma.jpg" alt="Luma" />
+            <img src="~/images/luma.jpg" alt="Luma" />
+            <img src="~/images/luma.jpg" alt="Luma" />
+        </div>
+
+        <div class="descricao">
+            <div class="descricao-titulo">Descrição</div>
+            <p class="mt-2">
+                Luma vivia nas ruas com seu irmão Juca. Ele foi adotado, mas ela ainda segue esperando seu tão sonhado lar.<br />
+                Luma é puro amor e calmaria! Precisa de um lar com muito amor e carinho.
+            </p>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-adotar">Adotar</button>
+        </div>
+    </div>
+
+</body>
+</html>
