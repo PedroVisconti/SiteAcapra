@@ -1,6 +1,42 @@
 ﻿<link rel="stylesheet" href="~/css/navbar.css" />
 
-<nav class="navbar d-flex justify-content-between align-items-center px-3 py-2">
-    <h5 class="mb-0 text-white">Sistema Adoção Acapra</h5>
+<nav class="navbar">
+    <div class="d-flex align-items-center gap-2">
+        <button id="toggleSidebar">
+            <span id="menu-icon">☰</span>
+        </button>
+        <h5 class="mb-0 text-white">Sistema Adoção Acapra</h5>
+    </div>
     <img src="~/imagens/logo_branca_acapra.png" alt="Logo Acapra" class="navbar-logo" />
 </nav>
+
+<div id="sidebar" class="sidebar">
+    <ul>
+        @if (User.IsInRole("Admin"))
+        {
+            <li><a href="#">Cadastro Animais</a></li>
+            <li><a href="#">Cadastro Vacina</a></li>
+            <li><a href="#">Cadastro Espécie</a></li>
+            <li><a href="#">Cadastro Raça</a></li>
+            <li><a href="#">Mostruário</a></li>
+        }
+        else
+        {
+            <li><a href="#">Formulário de adoção</a></li>
+            <li><a href="#">Mostruário</a></li>
+            <li><a href="#">Fazer Login</a></li>
+            <li><a href="#">Sair</a></li>
+        }
+    </ul>
+</div>
+
+<script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+    const menuIcon = document.getElementById('menu-icon');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        menuIcon.textContent = sidebar.classList.contains('active') ? '✕' : '☰';
+    });
+</script>
