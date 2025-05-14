@@ -14,18 +14,19 @@
     <ul>
         @if (User.IsInRole("Admin"))
         {
-            <li><a href="#">Cadastro Animais</a></li>
-            <li><a href="#">Cadastro Vacina</a></li>
-            <li><a href="#">Cadastro Espécie</a></li>
-            <li><a href="#">Cadastro Raça</a></li>
-            <li><a href="#">Mostruário</a></li>
+            <li><a href="/Animal/CadastroAnimal">Cadastro Animais</a></li>
+            <li><a href="/Vacina/CadastroVacina">Cadastro Vacina</a></li>
+            <li><a asp-controller="#" asp-action="#">Cadastro Espécie</a></li>
+            <li><a asp-controller="#" asp-action="#">Cadastro Raça</a></li>
+            <li><a asp-controller="#" asp-action="#">Mostruário</a></li>
+
         }
         else
         {
-            <li><a href="#">Formulário de adoção</a></li>
-            <li><a href="#">Mostruário</a></li>
-            <li><a href="#">Fazer Login</a></li>
-            <li><a href="#">Sair</a></li>
+            <li><a href="/Formulario/Formulario">Formulário de adoção</a></li>
+            <li><a asp-controller="#" asp-action="#">Mostruário</a></li>
+            <li><a href="/">Fazer Login</a></li>
+            <li><a asp-controller="#" asp-action="#">Sair</a></li>
         }
     </ul>
 </div>
