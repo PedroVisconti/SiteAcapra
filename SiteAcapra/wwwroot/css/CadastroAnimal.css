@@ -50,5 +50,5 @@ main {
 }
 
     .btn-cancelar:hover {
-        background-color: #703b3b;
+        background-color: #703b3b !important;
     }
