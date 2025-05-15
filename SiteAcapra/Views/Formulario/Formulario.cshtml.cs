@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SiteAcapra.Pages
+namespace SiteAcapra.Views.Formulario
 {
     public class FormularioModel : PageModel
     {
