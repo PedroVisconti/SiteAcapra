@@ -1,0 +1,51 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cadastro-container {
+    background-color: #d9d7d7;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+}
+
+
+.btn-salvar {
+    background-color: #5a4b82 !important;
+    color: white !important;
+}
+
+    .btn-salvar:hover {
+        background-color: #483a68 !important;
+    }
+
+.btn-cancelar {
+    background-color: #884c4c !important;
+    color: white !important;
+}
+
+    .btn-cancelar:hover {
+        background-color: #703b3b !important;
+    }

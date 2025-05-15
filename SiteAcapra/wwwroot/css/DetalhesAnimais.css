@@ -10,9 +10,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 .titulo-animal {
@@ -32,6 +33,7 @@
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+    height: 350px;
 }
 
     .galeria h5 {
@@ -40,15 +42,16 @@
         display: inline-block;
         padding: 5px 15px;
         border-radius: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .galeria img {
-        width: 100px;
-        height: 120px;
+        width: 160px;
+        height: 190px;
         object-fit: cover;
         border-radius: 12px;
         margin: 5px;
+        margin-top: 10px;
     }
 
 .descricao {
@@ -68,14 +71,14 @@
 }
 
 .btn-adotar {
-    margin-top: 20px;
-    background-color: #5a4b82;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
+    margin-top: 20px !important;
+    background-color: #5a4b82 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 30px !important;
+    border-radius: 5px !important;
 }
 
     .btn-adotar:hover {
-        background-color: #483a68;
+        background-color: #483a68 !important;
     }
