@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #f8f9fa;
+    justify-content: space-between;
 }
 
 @media (min-width: 768px) {

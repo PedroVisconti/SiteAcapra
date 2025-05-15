@@ -1,6 +1,4 @@
-﻿
-
-.top-bar {
+﻿.top-bar {
     background-color: #4B3F72;
     color: white;
     display: flex;
@@ -14,8 +12,8 @@
 
 .form-box {
     background-color: #d3d3d3;
-    padding: 30px;
-    margin: 200px auto;
+    padding: 70px;
+    margin: auto;
     width: 600px;
     border-radius: 8px;
     text-align: center;
