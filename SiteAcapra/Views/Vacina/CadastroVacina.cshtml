@@ -34,7 +34,7 @@
 
         .cadastro-container {
             background-color: #d9d7d7;
-            max-width: 650px;
+            max-width: 550px;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -47,33 +47,33 @@
 
 
         .btn-salvar {
-            background-color: #5a4b82 !important;
-            color: white !important
+            background-color: #5a4b82;
+            color: white
         }
 
             .btn-salvar:hover {
-                background-color: #483a68 !important;
+                background-color: #483a68;
             }
 
         .btn-cancelar {
-            background-color: #884c4c !important;
-            color: white !important;
+            background-color: #884c4c;
+            color: white;
         }
 
             .btn-cancelar:hover {
                 background-color: #703b3b;
             }
+
     </style>
 </head>
 <body>
     <div class="main-wrapper">
-        @await Html.PartialAsync("~/Views/Shared/_NavBar.cshtml")
 
         <main>
             <div class="cadastro-container">
                 <div class="text-center mb-4">
                     <img src="~/imagens/logo_roxa_acapra.png" alt="Logo ACAPRA" class="logo" />
-                    <h2 class="mt-3 text-uppercase fw-bold text-primary">Cadastro<br />Vacina</h2>
+                    <h2 class="fw-bold text-primary">Cadastro Vacina</h2>
                 </div>
 
                 <div class="row mb-3">
@@ -90,9 +90,6 @@
             </div>
         </main>
 
-        <footer>
-            @await Html.PartialAsync("~/Views/Shared/_Footer.cshtml")
-        </footer>
     </div>
 </body>
 </html>

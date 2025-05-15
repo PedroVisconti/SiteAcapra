@@ -1,0 +1,81 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.card-animal {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.titulo-animal {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info-animal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.galeria {
+    background-color: #70588c;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+    .galeria h5 {
+        background-color: #5a4b82;
+        color: white;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .galeria img {
+        width: 100px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin: 5px;
+    }
+
+.descricao {
+    background-color: #70588c;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.descricao-titulo {
+    background-color: #5a4b82;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-adotar {
+    margin-top: 20px;
+    background-color: #5a4b82;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+    .btn-adotar:hover {
+        background-color: #483a68;
+    }
