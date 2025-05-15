@@ -1,0 +1,21 @@
+﻿    .pet-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 20px;
+    background-color: #e5e5e5;
+    margin: 15px;
+    }   
+
+    .pet-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .pet-card .btn {
+        background-color: #5b4b8a;
+        color: white;
+        border-radius: 20px;
+        padding: 6px 16px;
+        margin-top: 10px;
+    }

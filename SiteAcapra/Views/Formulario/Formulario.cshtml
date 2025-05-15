@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Cadastro Animal - Sistema Adoção Acapra";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -8,48 +9,13 @@
         <title>Formulário de Adoção - ACAPRA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            body {
-                background-color: #f5f5f5;
-            }
-
-            .formulario {
-                background-color: #fff;
-                border-radius: 10px;
-                padding: 30px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.1);
-                margin-top: 30px;
-            }
-
-            .obrigatorio {
-                color: red;
-                font-size: 0.9rem;
-            }
-
-            .btn-salvar {
-                background-color: #5c548c;
-                color: white;
-            }
-
-            .btn-cancelar {
-                background-color: #732f2f;
-                color: white;
-            }
-
-            .logo {
-                width: 80px;
-            }
-
-            h1 {
-                color: #5c548c;
-            }
-        </style>
+        <link rel="stylesheet" href="~/css/Formulario.css" / >
     </head>
     <body>
         <div class="container">
             <form class="formulario row g-4">
                 <div class="text-center">
-                    <img src="logo.png" class="logo mb-2" alt="Logo ACAPRA">
+                <img src="~/imagens/logo_roxa_acapra.png" class="logo mb-2" alt="Logo ACAPRA">
                     <h1>Formulário de Adoção</h1>
                 </div>
 
@@ -195,8 +161,8 @@
 
                 <!-- Botões -->
                 <div class="col-12 d-flex justify-content-between">
-                    <button type="submit" class="btn btn-salvar px-5">Salvar</button>
-                    <button type="reset" class="btn btn-cancelar px-5">Cancelar</button>
+                    <button type="submit" class="btn-salvar px-5 btn">Salvar</button>
+                    <button type="reset" class="btn-cancelar px-5 btn">Cancelar</button>
                 </div>
             </form>
         </div>
