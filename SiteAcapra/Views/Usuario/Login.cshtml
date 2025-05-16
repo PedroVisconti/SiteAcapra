@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Login - Sistema Adoção Acapra";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema Adoção Acapra</title>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <div class="form-box">
+        <img src="~/imagens/logo_roxa_acapra.png" alt="Logo Acapra" class="form-logo">
+
+        <h2>Sistema de adoção Acapra</h2>
+
+        <form id="formLogin">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+
+        <a asp-controller="Usuario" asp-action="Cadastro" class="link-registrar">Registrar-se</a>
+    </div>
+</body>
+</html>

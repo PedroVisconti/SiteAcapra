@@ -25,12 +25,12 @@
         else if (User.IsInRole("User"))
         {
             <li><a href="/Formulario/Formulario">Formulário de adoção</a></li>
-            <li><a asp-controller="#" asp-action="#">Mostruário</a></li> 
+            <li><a href="/">Mostruário</a></li>
             <li><a asp-controller="#" asp-action="#">Sair</a></li>
         }else
         {
-            <li><a href="/">Fazer Login</a></li>
-            <li><a asp-controller="#" asp-action="#">Mostruário</a></li>
+            <li><a href="/Usuario/Login">Fazer Login</a></li>
+            <li><a href="/">Mostruário</a></li>
         }
 
     </ul>
