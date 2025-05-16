@@ -8,5 +8,15 @@ namespace SiteAcapra.Controllers
         {
             return View();
         }
+
+        public IActionResult TabelaEspecie()
+        {
+            return View();
+        }
+
+        public IActionResult TabelaVacina()
+        {
+            return View();
+        }
     }
 }
